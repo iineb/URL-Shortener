@@ -2,7 +2,7 @@
   "name": "URL Shortener",
   "version": "1.0.0",
   "description": "Shorten that URL",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
