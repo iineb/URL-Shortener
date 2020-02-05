@@ -1,12 +1,12 @@
 {
-  "name": "URL Shortener",
+  "name": "url-shortener",
   "version": "1.0.0",
   "description": "Shorten that URL",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Benjamin Ling",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
