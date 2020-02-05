@@ -33,7 +33,7 @@ app.post("/", function(req, res) {
         body: requestData
     }, function(err, response, body) {
         if (err) {
-            res.render("index", {
+            res.render("pages/index", {
                 shorten: null,
                 error: "There is an error!"
             });
