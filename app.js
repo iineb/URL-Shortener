@@ -1,14 +1,14 @@
 const express = require("express");
 const app = express();
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 const request = require('request');
 const port = 3000;
 
-app.use(express.static('public'));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
     res.render("pages/index", {
@@ -33,7 +33,7 @@ app.post("/", function(req, res) {
         body: requestData
     }, function(err, response, body) {
         if (err) {
-            res.render('index', {
+            res.render("index", {
                 shorten: null,
                 error: "There is an error!"
             });
@@ -46,7 +46,7 @@ app.post("/", function(req, res) {
             } else {
                 shortenText = "Please enter a URL";
             }
-            res.render('pages/index', {
+            res.render("pages/index", {
                 shorten: shortenText,
                 error: null
             });
